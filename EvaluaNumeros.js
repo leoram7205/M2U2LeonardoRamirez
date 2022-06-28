@@ -52,7 +52,9 @@ class EvaluaNumeros {
 
 const boton = document.querySelector('#ejecuta')
 
-boton.addEventListener('click',function(){
+boton.addEventListener('click',function(event){
+    event.preventDefault()
+
     const ejercicioEvalua = new EvaluaNumeros(document.querySelector('#num1').valueAsNumber,
                                                 document.querySelector('#num2').valueAsNumber,
                                                 document.querySelector('#num3').valueAsNumber,
@@ -67,8 +69,6 @@ boton.addEventListener('click',function(){
 
     const resp = document.querySelector("#respuesta")
     resp.innerHTML = `El número mayor es: ${ejercicioEvalua.numMay} y el número menor es: ${ejercicioEvalua.numMen}`
-
-    alert("Proceso Finalizado")
 })
 
 

@@ -4,7 +4,9 @@ let tot_pago = 0
 
 const boton = document.querySelector('#calcular')
 
-boton.addEventListener('click',function(){
+boton.addEventListener('click',function(event){
+    event.preventDefault()
+
     const nombre = document.querySelector('#nombre').value
     const cantmat = document.querySelector('#cantmat').valueAsNumber
     const valmat = document.querySelector('#valmat').valueAsNumber
