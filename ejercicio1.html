@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Ejercicio 1</title>
+</head>
+<body>
+    <form id="frmEjercicio1" class="form">
+        <a href="index.html">Volver</a>
+        <div class="w3-col l10 m12" id="main" >
+            <div class="w3-card-4">
+                <header class="w3-container w3-blue">
+                    <h2>Ejercicio 1</h2>
+                </header>
+                <div class="w3-container">
+                    <p>Crear un algoritmo que le permita al usuario ingresar:</p>
+                    <ol>
+                        <li>Nombre de un estudiante.</li>
+                        <li>Cantidad de materias o asignaturas a matricular.</li>
+                        <li>Valor de cada materia o asignatura.</li>
+                        <li>Valor de la papelería: que tiene un costo fijo de $20.000 y el carné con valor de $8.000.</li>
+                        <li>Descuento del 20% sobre el costo de las materias.</li>
+                        <p>Por medio del algoritmo imprimir el valor total de las materias que matriculó el estudiante con el
+                            descuento del 20% más los costos fijos.</p>
+                    </ol>
+                </div>
+            </div>
+            <br>
+            <div class="w3-card-4 w3-row-padding " >
+                <label for="nombre">Nombre estudiante:</label><br>
+                <input type="text" id="nombre" name="nombre" ><br>
+                <label for="cantmat">Cantidad materias:</label><br>
+                <input type="number" id="cantmat" name="cantmat" ><br>
+                <label for="valmat">Valor materia:</label><br>
+                <input type="number" id="valmat" name="valmat" ><br><br>
+            </div>
+            <br>
+            <div class="button">
+                <button id="calcular" class="w3-btn w3-block w3-white w3-border w3-border-blue w3-round-large">Calcula</button>
+            </div>
+            <br>
+            <div>
+                <p id="totmat"></p>
+                <p id="desc"></p>
+                <p id="totpago"></p>
+            </div>
+        </div>
+    </form>
+    <script src="CalculaValor.js"></script>
+</body>
+</html>

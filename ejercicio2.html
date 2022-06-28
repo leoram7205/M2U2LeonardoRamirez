@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+<body>
+    <article>
+    <form id="frmEjercicio2" class="form">
+        <a href="index.html"></a>
+        <div class="w3-col l10 m12" id="main" >
+            <div class="w3-card-4">
+                <header class="w3-container w3-blue">
+                    <h2>Ejercicio 2</h2>
+                </header>
+                <div class="w3-container">
+                    <p>Desarrolle un algoritmo que permita:</p>
+                    <ol>
+                        <li>Leer cuatro valores numéricos y almacenarlos en las variables A, B, C y D
+                            respectivamente.</li>
+                        <li>El algoritmo debe imprimir cual es el mayor valor y cual es el menor valor. Recuerde
+                            verificar que los cuatro valores introducidos por el teclado sean valores distintos.</li>
+                        <li>Crear un mensaje de alerta en caso que se detecte la introducción de valores iguales.</li>
+                    </ol>
+                </div>
+            </div>
+            <br>
+            <div class="w3-card-4 w3-row-padding " >
+                <div class="w3-medium">
+                    <input id="num1" type="number" placeholder="Número 1" class="w3-input w3-border w3-round-large input" >
+                </div>
+                <div class="w3-quarter">
+                    <input id="num2" type="number" placeholder="Número 2" class="w3-input w3-border w3-round-large input">
+                </div>
+                <div class="w3-quarter" >
+                    <input id="num3" type="number" placeholder="Número 3" class="w3-input w3-border w3-round-large input">
+                </div>
+                <div class="w3-quarter">
+                    <input id="num4" type="number" placeholder="Número 4" class="w3-input w3-border w3-round-large input">
+                </div>
+            </div>
+            <br>
+            <div class="button">
+                <button id="ejecuta" class="w3-btn w3-block w3-white w3-border w3-border-blue w3-round-large">Ejecutar</button>
+            </div>
+            <br>
+            <div>
+                <p id="respuesta"></p>
+            </div>
+        </div>
+    </form>
+    </article>
+    <script src="EvaluaNumeros.js"></script>
+</body>
+</html>
